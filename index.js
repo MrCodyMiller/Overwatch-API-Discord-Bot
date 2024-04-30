@@ -10,24 +10,6 @@ const client = new Client({ intents: [
 const PREFIX = "!"
 
 
-
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
-});
-client.on("messageCreate", (message) => {
-if (message.content === "hi") {
-  message.reply("Hey!")
-} 
-});
-
-client.on('messageCreate', (msg) => {
-  if (msg.content === 'ping') {
-    msg.reply('Pong!');
-  }
-});
-
-
-
 //Hero Info!
 client.on('messageCreate', async (message) => {
 
